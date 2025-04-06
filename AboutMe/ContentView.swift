@@ -59,6 +59,30 @@ struct ContentView: View {
                 .padding()
             }
             
+            ZStack {
+                Color(.matchaGreen)
+                    .ignoresSafeArea()
+                VStack(alignment: .leading, spacing: 20) {
+                    Image("Matcha")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(15)
+                    HStack(spacing: 20) {
+                        Text("Iced Matcha Latte")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        Text("🍵 Daily Bev 🍵")
+                    }
+                    Text("It's me, ya caffeine!")
+                        .multilineTextAlignment(.center)
+                }
+                .padding()
+                .background(Rectangle() .foregroundColor(.white))
+                .cornerRadius(15)
+                .shadow(radius: 15)
+                .padding()
+            }
+            
             
             
             
