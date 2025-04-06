@@ -83,10 +83,38 @@ struct ContentView: View {
                 .padding()
             }
             
+            ZStack {
+                Color(.royalBlue)
+                    .ignoresSafeArea()
+                VStack(alignment: .leading, spacing: 20) {
+                    Image("ASL")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .cornerRadius(15)
+                    HStack(spacing: 20) {
+                        Text("ASL")
+                            .font(.title)
+                            .fontWeight(.bold)
+                        Text("🤟 American Sign Language 🤟")
+                    }
+                    Text("It's me, ya hobby!")
+                        .multilineTextAlignment(.center)
+                }
+                .padding()
+                .background(Rectangle() .foregroundColor(.white))
+                .cornerRadius(15)
+                .shadow(radius: 15)
+                .padding()
+            }
+            
             
             
             
         }
+        .background(.prettyPurple)
+        .edgesIgnoringSafeArea(.all)
+        //changes background color of scroll view
+        
     }
 }
 
